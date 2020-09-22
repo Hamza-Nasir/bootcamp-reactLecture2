@@ -1,4 +1,5 @@
 import React, {useState} from 'react';  
+import './Room.css'
 
 function Room() {
 
@@ -20,7 +21,7 @@ function Room() {
     // }
 
   return (
-    <div>
+    <div className={"room " + (isLit? "lit": "dark")}>
       Inside the Room Component. Room is {isLit? "Lit": "Dark"} <br/>
       My Age: {age};
 
